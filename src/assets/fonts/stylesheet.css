@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'InterExtraBold';
+    src: local('InterExtraBold'), local('InterExtraBold'),
+        url('Inter_24pt-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InterBold';
+    src: local('InterBold'), local('InterBold'),
+        url('Inter_24pt-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InterSemiBold';
+    src: local('InterSemiBold'), local('InterSemiBold'),
+        url('Inter_24pt-SemiBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InterMedium';
+    src: local('InterMedium'), local('InterMedium'),
+        url('Inter_24pt-Medium.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InterRegular';
+    src: local('InterRegular'), local('InterRegular'),
+        url('Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InterLight';
+    src: local('InterLight'), local('InterLight'),
+        url('Inter_24pt-Light.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InterThin';
+    src: local('InterThin'), local('InterThin'),
+        url('Inter_24pt-Thin.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
