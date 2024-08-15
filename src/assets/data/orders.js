@@ -1,10 +1,5 @@
-import Payme from '../images/icons/Payme';
-import StoreIcon from '@mui/icons-material/Store';
-import { ReactComponent as OnFoot } from '../images/icons/on-foot.svg';
-import { ReactComponent as Cash } from '../images/icons/cash.svg';
-import Wallet from '../images/icons/Wallet';
-import { ReactComponent as CreditCard } from '../images/icons/credit-card.svg';
-import Click from '../images/icons/Click';
+import { ONFOOT, STORE } from './delivery-type';
+import { CASH, CLICK, CREDITCARD, PAYME, WALLET } from './payment-type';
 
 export const orders = [
     {
@@ -15,12 +10,10 @@ export const orders = [
             color: 'primary.main',
             items: [
                 {
-                    id: '321545',
+                    id: 1001,
                     price: 300560,
-                    paymentIcon: <Payme />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: PAYME,
+                    deliveryType: STORE,
                     dishes: [
                         { count: 1, name: 'Пепси 0,5' },
                         {
@@ -35,12 +28,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 1002,
                     price: 300560,
-                    paymentIcon: <Wallet />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: WALLET,
+                    deliveryType: STORE,
                     dishes: [
                         { count: 1, name: 'Пепси 0,5' },
                         {
@@ -55,12 +46,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 1003,
                     price: 300560,
-                    paymentIcon: <CreditCard />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CREDITCARD,
+                    deliveryType: STORE,
                     dishes: [
                         { count: 1, name: 'Пепси 0,5' },
                         {
@@ -75,10 +64,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 1004,
                     price: 300560,
-                    paymentIcon: <Cash />,
-                    deliveryIcon: <OnFoot />,
+                    paymentType: CASH,
+                    deliveryType: ONFOOT,
                     dishes: [
                         {
                             count: 1,
@@ -101,12 +90,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 1005,
                     price: 300560,
-                    paymentIcon: <Click />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CLICK,
+                    deliveryType: STORE,
                     dishes: [
                         { count: 1, name: 'Пепси 0,5' },
                         {
@@ -131,12 +118,10 @@ export const orders = [
             id: 2,
             items: [
                 {
-                    id: '321545',
+                    id: 2001,
                     price: 300560,
-                    paymentIcon: <CreditCard />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CREDITCARD,
+                    deliveryType: STORE,
                     dishes: [
                         {
                             count: 3,
@@ -147,12 +132,10 @@ export const orders = [
                     isAction: true,
                 },
                 {
-                    id: '321545',
+                    id: 2002,
                     price: 300560,
-                    paymentIcon: <CreditCard />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CREDITCARD,
+                    deliveryType: STORE,
                     dishes: [
                         { count: 1, name: 'Пепси 0,5' },
                         {
@@ -167,12 +150,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 2003,
                     price: 300560,
-                    paymentIcon: <CreditCard />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CREDITCARD,
+                    deliveryType: STORE,
                     dishes: [
                         { count: 1, name: 'Пепси 0,5' },
                         {
@@ -192,12 +173,10 @@ export const orders = [
             color: '#22C348',
             items: [
                 {
-                    id: '321545',
+                    id: 3001,
                     price: 300560,
-                    paymentIcon: <Cash />,
-                    deliveryIcon: (
-                        <OnFoot sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CASH,
+                    deliveryType: ONFOOT,
                     dishes: [
                         {
                             count: 2,
@@ -206,12 +185,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 3002,
                     price: 300560,
-                    paymentIcon: <Cash />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CASH,
+                    deliveryType: STORE,
                     dishes: [
                         {
                             count: 2,
@@ -234,12 +211,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 3003,
                     price: 300560,
-                    paymentIcon: <Cash />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CASH,
+                    deliveryType: STORE,
                     dishes: [
                         {
                             count: 2,
@@ -248,12 +223,10 @@ export const orders = [
                     ],
                 },
                 {
-                    id: '321545',
+                    id: 3004,
                     price: 300560,
-                    paymentIcon: <Cash />,
-                    deliveryIcon: (
-                        <OnFoot sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: CASH,
+                    deliveryType: ONFOOT,
                     dishes: [
                         {
                             count: 2,
@@ -273,12 +246,10 @@ export const orders = [
             color: '#1AC19D',
             items: [
                 {
-                    id: '321545',
+                    id: 4001,
                     price: 300560,
-                    paymentIcon: <OnFoot />,
-                    deliveryIcon: (
-                        <StoreIcon sx={{ color: 'info.main', width: 16 }} />
-                    ),
+                    paymentType: ONFOOT,
+                    deliveryType: STORE,
                     dishes: [
                         {
                             count: 2,

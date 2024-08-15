@@ -8,13 +8,15 @@ import Divider from '@mui/material/Divider';
 import { ReactComponent as Info } from '../../../assets/images/icons/info.svg';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import CardActionsComponent from './CardActionsComponent';
+import Delivery from '../../Delivery/index';
+import Payment from '../../Payments/index';
 
 type CardTypes = {
     el: {
-        id: string;
+        id: number;
         price: number;
-        paymentIcon: any;
-        deliveryIcon: any;
+        paymentType: any;
+        deliveryType: any;
         dishes: any;
         isAction?: undefined | boolean;
     };
@@ -45,10 +47,10 @@ const CardBase = ({ el, typeId }: CardTypes) => {
                                     variant='subtitle1'
                                     color='info.main'
                                 >
-                                    {el?.price} сум
+                                    {el?.price.toLocaleString('ru-RU')} сум
                                 </Typography>
-                                {el?.paymentIcon}
-                                {el?.deliveryIcon}
+                                <Payment paymentType={el?.paymentType} />
+                                <Delivery deliverType={el?.deliveryType} />
                             </Box>
                         </Box>
                     }

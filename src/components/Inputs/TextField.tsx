@@ -8,6 +8,8 @@ type TextFieldProps = {
     fullWidth?: boolean;
     sx?: SxProps<Theme>;
     variant?: 'outlined' | 'filled' | 'standard';
+    value: string;
+    setValue: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const TextField = ({
@@ -16,6 +18,8 @@ const TextField = ({
     fullWidth,
     sx,
     variant = 'outlined',
+    value,
+    setValue,
 }: TextFieldProps) => {
     return (
         <MuiTextField
@@ -24,6 +28,10 @@ const TextField = ({
             InputProps={InputProps}
             fullWidth={fullWidth}
             variant={variant}
+            value={value}
+            onChange={(e) => {
+                setValue(e.target.value);
+            }}
             sx={{
                 '& .MuiOutlinedInput-root': {
                     borderRadius: '6px',

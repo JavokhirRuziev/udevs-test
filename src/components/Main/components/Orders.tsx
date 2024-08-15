@@ -4,15 +4,24 @@ import CardWrapper from './CardWrapper';
 import CardBase from './Card';
 import { orders } from '../../../assets/data/orders';
 
-const Orders = () => {
+const Orders = ({ search }: { search: string }) => {
     return (
         <Box sx={{ display: 'flex', gap: 2 }}>
             {orders?.map((el, ind) => (
                 <CardWrapper key={ind} el={el?.type}>
                     <Box sx={cardItemsWrapper}>
-                        {el?.type?.items?.map((e, ind) => (
-                            <CardBase {...{ el: e, typeId: el?.type?.id }} />
-                        ))}
+                        {el?.type?.items?.map((e, ind) => {
+                            if (String(e.id).indexOf(search) > -1) {
+                                return (
+                                    <CardBase
+                                        key={e.id}
+                                        {...{ el: e, typeId: el?.type?.id }}
+                                    />
+                                );
+                            } else {
+                                return null;
+                            }
+                        })}
                     </Box>
                 </CardWrapper>
             ))}

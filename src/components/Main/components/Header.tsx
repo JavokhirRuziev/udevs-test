@@ -6,7 +6,13 @@ import TextField from '../../Inputs/TextField';
 import Select from '../../Inputs/Select';
 import DatePickerContainer from '../../Inputs/DatePicker';
 
-const Header = () => {
+const Header = ({
+    search,
+    setSearch,
+}: {
+    search: string;
+    setSearch: React.Dispatch<React.SetStateAction<string>>;
+}) => {
     return (
         <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 3 }}>
             <TextField
@@ -17,6 +23,8 @@ const Header = () => {
                         </InputAdornment>
                     ),
                 }}
+                value={search}
+                setValue={setSearch}
                 placeholder='Поиск по ID'
             />
             <Box sx={{ display: 'flex', gap: 1 }}>
