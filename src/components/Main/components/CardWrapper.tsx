@@ -17,7 +17,7 @@ type CardWrapperTypes = {
 const CardWrapper = ({ children, el }: CardWrapperTypes) => {
     return (
         <Box sx={cardWrapperStyles(el?.color)}>
-            <Card>
+            <Card sx={{ width: 326 }}>
                 <CardHeader
                     title={
                         <Typography
