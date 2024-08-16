@@ -57,14 +57,15 @@ const CardBase = ({ el, typeId }: CardTypes) => {
                 />
                 <Divider />
                 <CardContent>
-                    {el?.dishes?.map((el: DishTypes) => (
-                        <Typography variant='body1' mb={2}>
+                    {el?.dishes?.map((el: DishTypes, ind: number) => (
+                        <Typography key={ind} variant='body1' mb={2}>
                             {el?.count} x {el?.name}
                             <br />
                             {el?.additional &&
-                                el?.additional?.map((el) => (
+                                el?.additional?.map((el, ind) => (
                                     <>
                                         <Typography
+                                            key={ind}
                                             variant='body1'
                                             component={'span'}
                                             color={'text.secondary'}
